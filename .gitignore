@@ -1,0 +1,12 @@
+node_modules/
+.wrangler/
+.wrangler-config/
+.dev.vars
+.env
+.env.*
+!.env.example
+worker-configuration.d.ts
+src/lua-source.generated.ts
+dist/
+coverage/
+*.log

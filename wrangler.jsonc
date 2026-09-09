@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "xtwenty-lua",
+  "main": "dist/worker.mjs",
+  "no_bundle": true,
+  "compatibility_date": "2026-09-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": true,
+  "vars": {
+    // Disabled by default. This is only a spoofable visual compatibility mode.
+    "HEURISTIC_UA_ALLOWLIST": ""
+  },
+  "secrets": {
+    "required": ["LUA_ACCESS_TOKEN"]
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}
